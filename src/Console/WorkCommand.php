@@ -46,7 +46,7 @@ class WorkCommand extends IlluminateCommand
      *
      * @return int
      */
-    public function fire()
+    public function handle()
     {
         $queue = $this->option('queue');
         $interval = (int)$this->option('interval');
